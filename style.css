@@ -1,3 +1,8 @@
+:root {
+    --primary-bg: #161a34;
+    --primary-font-color : #fcd0b3;
+}
+
 * {
     font-family: 'Quicksand', sans-serif;
 }
@@ -10,14 +15,65 @@ html {
 body {
     padding: 0px;
     margin: 0px;
+    background-color: var(--primary-bg);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+::-webkit-scrollbar-track {
+    background: transparent; 
+  }
+   
+::-webkit-scrollbar-thumb {
+    background: var(--primary-font-color); 
+    border-radius: 5px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background:#77533b; 
+}
+
+nav {
+    background-color: var(--primary-bg);
+    color: var(--primary-font-color);
+    border-bottom: 1px solid var(--primary-font-color);
+}
+
+nav ul {
+    display: flex;
+    justify-content:flex-start;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 12px 25px 12px 12px;
+    list-style: none;
+    font-size: 18px;
+    padding: 5px;
+}
+
+nav ul li:hover {
+    background-color: var(--primary-font-color);
+    color: var(--primary-bg);
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 5px;
 }
 
 .main {
     border: 2px solid black;
     border-radius: 10px;
-    background-color: #392F5A;
-    margin: 100px auto;
-    color: white;
+    background-color: var(--primary-bg);
+    margin: 300px auto;
+    color: var(--primary-font-color);
     width: 250px;
     text-align: center;
+}
+
+.main:hover {
+    background-color: var(--primary-font-color);
+    color: var(--primary-bg);
+    transition: 0.3s;
 }
