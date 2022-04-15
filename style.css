@@ -186,6 +186,22 @@ nav {
 
 .contact-link:hover {
     filter: invert();
+    transition: 0.3s;
+}
+
+.email-btn {
+    padding: 12px;
+    margin: 12px auto;
+    background-color: var(--primary-transparent-light-bg);
+    color: var(--primary-color-dark);
+    border-radius: 12px;
+    width: 200px;
+    box-shadow: var(--primary-shadow);
+}
+
+.email-btn:hover{
+    background-color: var(--primary-color-dark);
+    color: var(--primary-color-light);
     transition: 0.4s;
 }
 
