@@ -34,8 +34,8 @@ html, body {  /*Selector 6*/
     overflow-x: hidden;
     padding: 0px;
     margin: 0px;
-    background-image: url("img/1.jpg");
-    background-attachment: fixed;
+    background-image: url("https://arifian853.github.io/perancangan-web-2022/1.jpg");
+    background-attachment: scroll;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -69,7 +69,7 @@ nav {
     display: flex;
     justify-content:start;
     text-align: center;
-    margin: 15px 15px 15px 20px;
+    margin: 15px 15px 15px 50px;
 }
 
 #nav-brand { /*Selector 8*/
@@ -102,7 +102,7 @@ nav {
 .main-content {
     background-color: var(--primary-transparent-light-bg);
     color: var(--primary-color-dark);
-    margin: 120px 35px 1px 35px;
+    margin: 160px 75px 1px 75px;
     padding : 25px;
     text-align: center;
     border-radius: 12px;
@@ -110,7 +110,7 @@ nav {
 }
 
 .main-content2 {
-    margin: 20px 35px 45px 35px;
+    margin: 20px 75px 45px 75px;
     background-color: var(--primary-transparent-light-bg);
     color: var(--primary-color-dark);
     padding : 25px;
@@ -124,7 +124,6 @@ nav {
     height: auto;
     border: 2px solid var(--primary-transparent-light-bg);
     border-radius: 50%;
-    position: relative;
     margin-top: -85px;
 }
 
@@ -136,11 +135,6 @@ nav {
 
 .occupation .txt {  /*Selector 10*/
     margin: 5px;
-}
-
-.img-occupation {
-    width: 17px;
-    height:auto;
 }
 
 .txt::after  {  /*Selector 11*/
@@ -175,19 +169,9 @@ nav {
 .contact-container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content:center;
 }
 
-.contact-link, .contact-link-exclude {
-    width: 35px;
-    height: auto;
-    margin: 12px;
-}
-
-.contact-link:hover {
-    filter: invert();
-    transition: 0.3s;
-}
 
 .email-btn {
     padding: 12px;
@@ -203,6 +187,20 @@ nav {
     background-color: var(--primary-color-dark);
     color: var(--primary-color-light);
     transition: 0.4s;
+}
+
+.bi-facebook, .bi-instagram, .bi-twitter, .bi-linkedin, .bi-github {
+    margin: 10px;
+}
+
+.bi {
+    width: 35px;
+    height: auto;
+}
+
+.bi:hover {
+    filter: invert();
+    transition: 0.3s;
 }
 
 
